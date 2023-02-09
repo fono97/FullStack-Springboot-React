@@ -2,7 +2,7 @@ import 'antd/dist/reset.css';
 import {useState, useEffect} from "react";
 import './App.css';
 import {deleteStudent, getAllStudents} from "./client";
-import {Layout, Menu, Breadcrumb, Table, Spin, Empty, Button, Tag, Badge, Avatar, Popconfirm, Radio} from 'antd';
+import {Layout, Menu, Breadcrumb, Table, Spin, Empty, Button, Tag, Badge, Avatar, Popconfirm, Radio, Image} from 'antd';
 import {
     DesktopOutlined,
     PieChartOutlined,
@@ -206,7 +206,11 @@ useEffect(()=>{
                     { renderStudents() }
                 </div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>hackerdev.io ©2018 Created by Ant UED</Footer>
+            <Footer style={{ textAlign: 'center' }}>
+                <Image width={75}
+                       src ="https://user-images.githubusercontent.com/55008545/217876166-5b858b1d-dde6-4917-8f58-823860dc533c.png"
+                />
+            </Footer>
         </Layout>
     </Layout>
 }
